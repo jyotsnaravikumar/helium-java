@@ -3,6 +3,9 @@
 date >> ~/status
 echo "post-install.sh ..." >> ~/status
 
+# copy vscode files
+mkdir -p .vscode && cp docs/vscode-template/* .vscode
+
 # source the bashrc-append from the repo
 # you can add project specific settings to .bashrc-append and 
 # they will be added for every user that clones the repo with Codespaces
